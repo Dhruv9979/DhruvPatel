@@ -93,6 +93,8 @@ input, select {
     vertical-align:middle;
 }
 
+/*My code*/
+
 *{text-decoration: none;}
 
 main {
@@ -107,65 +109,111 @@ header {
     width:100%;
     height:100px;
 }
+body{
+    font-family: roboto, sans-serif;
+}
+header .container{
+    width: 100%;
+    height: 100ph;
+}
+header .navbar{
+    width: 300px;
+    height: 100%;
+    background-color: #262626;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20% 0 0 60%;
+    transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+}
+header .change{
+    right: 0;
+}
+header .menu{
+    width: 45px;
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+header .line{
+    width: 100%;
+    height: 3px;
+    background-color: chocolate;
+    transition: all 0.8s;
+}
+header .change .line-1{
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+header .change .line-2{
+    opacity: 0;
+}
+header .change .line-3{
+    transform: rotateZ(405deg) translate(-8px, -6px);
+}
+header .nav-list{
+    text-align: right;
+}
+header .nav-item{
+    list-style: none;
+    margin: 25px;
+}
+header .nav-link{
+    text-decoration: none;
+    font-size: 22px;
+    color: #eee;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 3px 0;
+}
+header .nav-link::before,
+header .nav-link::after{
+    content: "";
+    width:100%;
+    height: 2px;
+    background-color: chocolate;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+header .nav-link::after{
+    bottom: 0;
+    transform-origin: right;
+}
+header .nav-link::before{
+    top: 0;
+    transform-origin: left;
+}
+header .nav-link:hover::before, .nav-link:hover::after{
+    transform: scaleX(1);
+}
 header .header-brand{
-     font-family: Roboto;
-     font-size:24px;
-     color: #111;
-     text-transform: upperproject;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
      display: block;
      margin: 0 auto;
-     text-align: center;
-     padding: 20px 0;
-}
-header nav ul{
-    display:block;
-    margin: 0 auto;
-    width:fit-content;
-}
-header nav ul li{
-    display: block;
-    float: left;
-    list-style: none;
-    padding: 0px 16px;
-}
-header nav ul li a{
-     font-family: Roboto;
-     font-size:16px;
-     color: #111;
-     text-transform: upperproject;
-}
-header .header-projects{
-    display:none;
+    padding: 20px 0;
 }
 /*Desktop Version*/
 @media  only screen and (min-width: 1000px) {
     header .header-brand{
      margin: 31px  0;
      text-align: left;
-     line-height: 38px;
+     line-height: 10px;
      padding: 0 20px 0 40px;
      border-right: 3px solid #111;
      float: left;
-    }
-    header nav ul{
-    margin: 20px 0px 0px 20px;
-    float: left;
-    }
-    header nav ul li a{
-    line-height: 60px;
-    }
-    header .header-projects{
-    display:block;
-    font-family: Roboto;
-    font-size:16px;
-    color: #111;
-    text-transform: upperproject;
-    line-height: 38px;
-    border: 1px solid #111;
-    float: right;
-    margin-right: 40px;
-    margin-top: 30px;
-    padding: 0 20px;
     }
 }
 /*INDEX*/
@@ -216,7 +264,7 @@ header .header-projects{
     line-height: 100px;
     color: #111;
     text-align: center;
-    text-transform: upperproject;
+    text-transform: uppercase;
 }
 /*Desktop Version*/
 @media  only screen and (min-width: 1000px) {
@@ -292,7 +340,7 @@ header .header-projects{
     font-size: 28px;
     font-weight: 600;
     color: #111;
-    text-transform: upperproject;
+    text-transform: uppercase;
 }
 .projects-links .projects-link{
     float: left;
@@ -308,7 +356,7 @@ header .header-projects{
     font-weight: 600;
     color: #111;
     text-align: center;
-    text-transform: upperproject;
+    text-transform: uppercase;
 }
 /*All projects*/
 .project-vid h2{ 
@@ -317,7 +365,7 @@ header .header-projects{
     font-weight: 600;
     color: #111;
     text-align: center;
-    text-transform: upperproject;
+    text-transform: uppercase;
 }
 .project-vid video{
     display: block;
@@ -329,7 +377,7 @@ header .header-projects{
     font-size: 28px;
     font-weight: 600;
     color: #111;
-    text-transform: upperproject;
+    text-transform: uppercase;
     padding-bottom: 20px;
 }
 .project-vid article div p{
@@ -338,7 +386,7 @@ header .header-projects{
     font-weight: 600;
     line-height: 24px;
     color: #111;
-    text-transform: upperproject;
+    text-transform: uppercase;
     column-count: 3;
     column-gap: 30px;
 }
