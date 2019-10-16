@@ -96,14 +96,14 @@ input, select {
 /*My code*/
 
 *{text-decoration: none;}
-html { 
-    background: url(images/background.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
 
+html{ 
+background: url(images/background.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
 main {
     padding-top: 100px;
 }
@@ -116,6 +116,16 @@ header {
     width:100%;
     height:100px;
 }
+/* header .header-brand{
+    font-family: roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 900px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+} */
 header .container{
     width: 100%;
     height: 100ph;
@@ -212,12 +222,11 @@ header .header-brand{
 /*Desktop Version*/
 @media  only screen and (min-width: 1000px) {
     header .header-brand{
-     margin: 31px  0;
-     text-align: left;
-     line-height: 10px;
-     padding: 0 20px 0 40px;
-     border-right: 3px solid #111;
-     float: left;
+    margin: 31px  0;
+    text-align: center;
+    line-height: 38px;
+    padding: 0 20px 0 40px;
+    float: left;
     }
 }
 /*INDEX*/
@@ -273,8 +282,9 @@ header .header-brand{
 /*Desktop Version*/
 @media  only screen and (min-width: 1000px) {
     .wrapper{
-        width: 1000px;
+        width: 850px;
         margin: 0 auto;
+        text-align: center;
     }
     .index-banner{
         height:450px;
@@ -288,19 +298,20 @@ header .header-brand{
         overflow: hidden;
     }
     .index-links div {
+        display: inline-block;
         margin: 20px 10px 0;
-        height: 230px;
+        height: 100px;
         background-color: #111;
-        float: left;
     }
     .index-boxlink-square{
-        width: calc(25% - 20px) !important;
+        width: 20% !important;
     }
     .index-boxlink-rectangle{
-        width: calc(50% - 20px) !important;
+        width: calc(30% - 10px) !important;
     }
     .index-links div h3{
-        line-height: 230px;
+        text-align: center;
+        line-height: 100px;
     }
 }
 
@@ -338,36 +349,38 @@ header .header-brand{
 .projects-links{
     overflow: hidden;
     margin-bottom: 20px; 
+    text-align: center;
 }
 .projects-links h2{ 
     font-family: Roboto;
     font-size: 28px;
     font-weight: 600;
-    color: #111;
+    color: #f1f1f1;
     text-transform: uppercase;
 }
 .projects-links .projects-link{
-    float: left;
-    width: 230px;
-    height: 230px;
-    margin: 20px 10px 0px;
-    background-color: #e3e3e3;
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    margin: 20px 20px 0px;
+    background-color: #111;
 }
 .projects-links .projects-link p{ 
-    padding-top: 45%;
+    padding-top: 32%;
     font-family: Roboto;
     font-size: 24px;
     font-weight: 600;
-    color: #111;
+    color: #f1f1f1;
     text-align: center;
     text-transform: uppercase;
 }
+
 /*All projects*/
 .project-vid h2{ 
     font-family: Roboto;
     font-size: 28px;
     font-weight: 600;
-    color: #111;
+    color: #f1f1f1;
     text-align: center;
     text-transform: uppercase;
 }
@@ -380,7 +393,7 @@ header .header-brand{
     font-family: Roboto;
     font-size: 28px;
     font-weight: 600;
-    color: #111;
+    color: #f1f1f1;
     text-transform: uppercase;
     padding-bottom: 20px;
 }
@@ -389,7 +402,7 @@ header .header-brand{
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    color: #111;
+    color: #f1f1f1;
     text-transform: uppercase;
     column-count: 3;
     column-gap: 30px;
@@ -473,74 +486,48 @@ header .header-brand{
 }
 
 /*FOOTER*/
-footer{
-    width: calc(100% - 80px);
-    padding: 40px 40px;
+.social-footer {
     margin-top: 20px;
-    background-color: #111;
-    overflow: hidden;
+    padding: 10px;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: -webkit-flex;
+    display: -ms-flexbox; */
+    /* -webkit-align-items: center;
+    -ms-flex-align: center; */
+    /* -webkit-justify-content: space-between; */
+    /* -ms-flex-pack: justify; */
 }
-footer ul{
-    width: fit-content;
-    float: left;
-    padding-left: 20px;
-}
-footer ul li {
-    display: block;
+.social-footer .social-footer-icons li{
     list-style: none;
+    display: inline-block;
+    padding: 0 20px;
 }
-footer ul li a{
-    font-family: Roboto;
-     font-size: 16px;
-     color: #fff;
-     line-height: 40px;
+.social-footer .social-footer-icons li:last-of-type {
+    margin-right: 0;
 }
-.footer-links-projects{
-    display: none;
+  
+.social-footer .social-footer-icons .fa {
+    font-size: 1.3rem;
+    color: #fefefe;
 }
-.footer-sm{
-    width: 50px;
-    float: right;
-}
-.footer-sm img{
-    width: 100%;
-    margin-bottom: 10px; 
-}
+  
+.social-footer .social-footer-icons .fa:hover {
+    color: #4a4a4a;
+    transition: color 0.3s ease-in;
+}  
 /*Desktop Version*/
 @media  only screen and (min-width: 1000px) {
-    .footer-links-projects{
-        display: block;
-    }
-    footer ul{
+    /* .social-footer .social-footer-icons ul{
         padding-right: 30px;
-    }
-    footer ul li p{
+    } */
+    /* footer ul li p{
         font-family: Roboto;
          font-size: 16px;
          color: #fff;
          line-height: 40px;
          text-transform: uppercase;
-    }
-}
-.fa{
-    margin: 3px;
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook{
-    background: #3B5998;
-    color: white;
-}
-
-.fa-linkedin{
-    background: #4458dc;
-    color: white;
+    } */
 }
