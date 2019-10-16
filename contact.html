@@ -19,7 +19,6 @@
                         <div class="line line-3"></div>
                     </div>
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
                         <li class="nav-item"><a href="about.html" class="nav-link">About Me</a></li>
                         <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
                         <li class="nav-item"><a href="contact.html" class="nav-link">Contact Me</a></li>
@@ -28,8 +27,32 @@
                 </nav>
             </div>
         </header>
+        <!-- Console -->
         <main>
-
+            <div class="contact-me">
+                <h2>Contact Me</h2>
+                <h1 id="error_message"></h1>
+                <form id="myform" onsubmit="return validation();">
+                    <div class="input-fields">
+                        <div class="items">
+                            <input type="text" placeholder="Name" id="name" class="input">
+                        </div>
+                        <div class="items">
+                            <input type="text" placeholder="Company Name" id="company-name" class="input">
+                    </div>
+                        <div class="items">
+                            <input type="text" placeholder="E-mail" id="email" class="input">
+                        </div>
+                        <div class="items">
+                            <input type="text" placeholder="Subject" id="subject" class="input">
+                        </div>
+                        <div class="items">
+                            <textarea id="message" placeholder="Message" class="input"></textarea>
+                        </div>
+                    </div>
+                    <div class="btn"><input type="submit" value="Let's Talk"></div>
+                </form>
+            </div>
         </main>
         <div class="wrapper">
             <footer>
@@ -53,6 +76,6 @@
                 </div>
             </footer>
         </div>
-        <script src="script.js"></script>
     </body>
+    <script src="script.js"></script>
 </html>
