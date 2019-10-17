@@ -34,7 +34,7 @@
             <div class="contact-me">
                 <h2>Contact Me</h2>
                 <h1 id="error_message"></h1>
-                <form id="myform" onsubmit="return validation();">
+                <form action="POST" data-netlify="true" id="myform" onsubmit="return validation();">
                     <div class="input-fields">
                         <div class="items">
                             <input type="text" placeholder="Name" id="name" class="input">
@@ -50,6 +50,9 @@
                         </div>
                         <div class="items">
                             <textarea id="message" placeholder="Message" class="input"></textarea>
+                        </div>
+                        <div class="items">
+                            <div data-netlify-recaptcha="true"></div>
                         </div>
                     </div>
                     <div class="btn"><input type="submit" value="Let's Talk"></div>

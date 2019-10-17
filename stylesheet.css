@@ -308,6 +308,7 @@ header .header-brand{
     }
     .index-boxlink-rectangle{
         width: calc(30% - 10px) !important;
+        border-radius: 25px;
     }
     .index-links div h3{
         text-align: center;
@@ -364,6 +365,7 @@ header .header-brand{
     height: 150px;
     margin: 20px 20px 0px;
     background-color: #111;
+    border-radius: 25px;
 }
 .projects-links .projects-link p{ 
     padding-top: 32%;
