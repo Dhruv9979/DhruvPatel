@@ -489,14 +489,21 @@ header .header-brand{
 
 /*FOOTER*/
 .social-footer {
-    margin-top: 40px;
-    padding: 10px;
-    background: #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* display: -webkit-flex;
-    display: -ms-flexbox; */
+        margin-top: 40px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 850px;
+        background-color: #111;
+        color: #f1f1f1;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    /* display: -webkit-flex; */
+    /* display: -ms-flexbox; */
     /* -webkit-align-items: center;
     -ms-flex-align: center; */
     /* -webkit-justify-content: space-between; */
