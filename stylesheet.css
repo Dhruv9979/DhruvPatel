@@ -98,11 +98,13 @@ input, select {
 *{text-decoration: none;}
 
 html{ 
-background: url(images/background.jpg) no-repeat center center fixed; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    position: relative;
+    min-height: 100%;
+    background: url(images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 main {
     padding-top: 100px;
@@ -215,8 +217,8 @@ header .header-brand{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-     display: block;
-     margin: 0 auto;
+    display: block;
+    margin: 0 auto;
     padding: 20px 0;
 }
 /*Desktop Version*/
@@ -318,25 +320,25 @@ header .header-brand{
 
 .code {
     /*  margin-top:150px;*/
-      border-radius: 5px;
-      width:750px;
-      margin: 0 auto;
-      padding-top:15px;
-      font-size:30px;
-      background: #ccc;
-      height: 700px;
-      font-family: 'Monaco', 'Courier New';
-      text-align: left;
-      font-size:13px;
-      color: #fafafa;
+    border-radius: 5px;
+    width:750px;
+    margin: 0 auto;
+    padding-top:15px;
+    font-size:30px;
+    background: #ccc;
+    height: 700px;
+    font-family: 'Monaco', 'Courier New';
+    text-align: left;
+    font-size:13px;
+    color: #fafafa;
 }
     
 .console{
-      width:670px;
-      padding: 40px;
-      height: 620px;
-      margin:0 auto;
-      background: #383737;
+    width:670px;
+    padding: 40px;
+    height: 620px;
+    margin:0 auto;
+    background: #383737;
 }
 .console a{
     color: goldenrod;
@@ -489,18 +491,14 @@ header .header-brand{
 
 /*FOOTER*/
 .social-footer {
-        margin-top: 40px;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 850px;
-        background-color: #111;
-        color: #f1f1f1;
-        text-align: center;
-        padding: 10px;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
+    margin-top: 40px;
+    width: 850px;
+    background-color: #111;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
     /* display: -webkit-flex; */
     /* display: -ms-flexbox; */
     /* -webkit-align-items: center;
