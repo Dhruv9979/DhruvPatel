@@ -109,6 +109,11 @@ html{
 }
 main {
     padding-top: 100px;
+    padding-bottom: 60px;
+}
+.bg{
+    position: relative;
+    min-height: 100vh;
 }
 header {
     position: fixed;
@@ -504,10 +509,10 @@ header .header-brand{
 }
 
 /*FOOTER*/
-/* .footer-wrapper{
+.footer-wrapper{
     position: absolute;
     bottom: 0;
-} */
+}
 .social-footer {
     margin-top: 40px;
     width: 850px;
