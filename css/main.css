@@ -114,6 +114,7 @@ main {
 .bg{
     position: relative;
     min-height: 100vh;
+    width: 100%;
 }
 header {
     position: fixed;
@@ -255,16 +256,11 @@ header .header-brand{
 .index-banner{
     width:100%;
     height:calc(100vh - 100px);
-    /* background-image: url('images/banner.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
     display: table;
 }
 .vertical-center{
     display: table-cell;
     vertical-align: middle;
-
 }
 .index-banner h2{
     font-family: Roboto;
@@ -364,6 +360,13 @@ header .header-brand{
 }
 .console a:visited{
     color: crimson;
+}
+@media  only screen and (max-height: 450px){
+    .code{
+        height: 50%;
+        width: 50%;
+    }
+
 }
 
 /*projects*/
