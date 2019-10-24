@@ -1,59 +1,76 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="">
     <head>
         <meta charset="utf-8">
-        <title>TalkBox-Pro</title>
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="stylesheet.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-        <div class = "bg">
-        <header>
-            <a href="index.html" class="header-brand"><img src="images/default.png" alt="Logo" width="100", height="70"></a>
-            <div class="container">
-                <nav class="navbar">
-                    <div class="menu">
-                        <div class="line line-1"></div>
-                        <div class="line line-2"></div>
-                        <div class="line line-3"></div>
-                    </div>
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link">About Me</a></li>
-                        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact Me</a></li>
-                        <li class="nav-item"><a href="mailto:starb9979@gmail.com?Subject=Job Opportunity" class="nav-link">Hire Me</li></a>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section class = "project-vid">
-                <div class="wrapper">
-                    <h2>TalkBox-Pro</h2>
-                    <video src="" poster="" controls></video>
-                    <article>
-                        <h3>About the Project</h3>
-                        <div>
-                            <p>Text about the project.</p>
-                            <p><a href="https://github.com/Dhruv9979/TalkBox">Github</a></p>
+        <div class="screen-wipe-top"></div>
+        <div class="screen-wipe-bottom"></div>
+        <div id="barba-wrapper">
+            <div class="barba-container">
+                <div class = "bg">
+                    <header>
+                        <a href="index.html" class="header-brand"><img src="img/default.png" alt="Logo" width="100", height="70"></a>
+                        <div class="container">
+                        <div id="myNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                                <ul>
+                                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                                    <li class="nav-item"><a href="about.html" class="nav-link">About Me</a></li>
+                                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Me</a></li>
+                                    <li class="nav-item"><a href="mailto:dhruvp9799@gmail.com?Subject=Job Opportunity" class="nav-link">Hire Me</li></a>
+                                </ul>
+                            </div>
                         </div>
-                    </article>
+                        <span class="hamburger" onclick="openNav()">&#9776;</span>
+                    </div>
+                    </header>
+                    <main>
+                        <section class = "project-vid">
+                            <div class="wrapper">
+                                <h2>TalkBox-Pro</h2>
+                                <article>
+                                    <h3>About the Project</h3>
+                                    <div>
+                                        <p>Text about the project.</p>
+                                        <p><a href="https://github.com/Dhruv9979/TalkBox">Github</a></p>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                    </main>
+                    <div class="wrapper">
+                            <div class="footer-wrapper">
+                            <footer class="social-footer">
+                                <div class="social-footer-icons">
+                                    <ul class="menu simple">
+                                        <li><a href="https://www.facebook.com/druv.patel"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/dhruvpatel9979/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </footer>
+                        </div>
+                        </div>
                 </div>
-            </section>
-        </main>
-        <div class="wrapper">
-            <footer class="social-footer">
-                <div class="social-footer-icons">
-                    <ul class="menu simple">
-                        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </footer>
+            </div>
         </div>
-        <script src="script.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/barba.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
