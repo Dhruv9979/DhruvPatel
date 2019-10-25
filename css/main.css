@@ -262,6 +262,11 @@ header .header-brand{
     display: table-cell;
     vertical-align: middle;
 }
+.myPic{
+    border-radius: 500px; 
+    
+    padding: 50px 10px;
+}
 .index-banner h2{
     font-family: Roboto;
     font-size: 60px;
@@ -305,6 +310,10 @@ header .header-brand{
     }
     .index-banner{
         height:225px;
+    }
+    .myPic{
+        float: left;
+        position: fixed;
     }
     .index-banner h1{
         display: block;
