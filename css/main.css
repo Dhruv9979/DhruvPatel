@@ -442,6 +442,12 @@ header .header-brand{
     column-count: 3;
     column-gap: 30px;
 }
+.project-vid article div a{
+    color: goldenrod;
+}
+.project-vid article div a:visited{
+    color: crimson;
+}
 
 /*Contact Me*/
 .contact-me{
