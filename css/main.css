@@ -434,11 +434,11 @@ header .header-brand{
 }
 .project-vid article div p{
     font-family: Roboto;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 15px;
+    /* font-weight: 600; */
     line-height: 24px;
     color: #f1f1f1;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     column-count: 3;
     column-gap: 30px;
 }
