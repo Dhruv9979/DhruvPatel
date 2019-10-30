@@ -264,7 +264,6 @@ header .header-brand{
 }
 .myPic{
     border-radius: 500px; 
-    
     padding: 50px 10px;
 }
 .index-banner h2{
@@ -636,7 +635,7 @@ nav a{
     background-repeat: no-repeat;
 }
 .bgimage3{
-    background: url("/img/default.png");
+    background: url("/img/Logo.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
