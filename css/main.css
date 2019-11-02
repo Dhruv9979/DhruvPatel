@@ -101,11 +101,13 @@ input, select {
 html{ 
     position: relative;
     min-height: 100%;
-    background: url("../img/background.jpg") no-repeat center center fixed; 
+    /* background: url("../img/background.jpg") no-repeat center center fixed; */
+    background-color: #1e1e1e;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    letter-spacing: 2px;
 }
 main {
     padding-top: 100px;
@@ -279,7 +281,6 @@ header .header-brand{
     font-family: Roboto;
     font-size: 28px;
     font-weight: 100;
-    font-style: italic;
     line-height: 40px;
     color: #fff;
     text-align: center;
@@ -289,12 +290,13 @@ header .header-brand{
     margin: 16px 16px 0;
     width: calc(100% - 32px);
     height: 100px;
-    background-color: #111
+    background-color: teal;
+    border-radius: 7px;
 }
 .index-links div h3{
     font-family: Roboto;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 100;
     line-height: 100px;
     color: #f2f2f2;
     text-align: center;
@@ -326,14 +328,14 @@ header .header-brand{
         display: inline-block;
         margin: 10px 10px 0;
         height: 100px;
-        background-color: #111;
-    }
+        background-color: transparent;
+        border: solid teal 2px;
+        }
     .index-boxlink-square{
         width: 20% !important;
     }
     .index-boxlink-rectangle{
-        width: calc(30% - 10px) !important;
-        border-radius: 25px;
+        width: calc(40% - 10px) !important;
     }
     .index-links div h3{
         text-align: center;
@@ -387,23 +389,24 @@ header .header-brand{
 .projects-links h2{ 
     font-family: Roboto;
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 100;
     color: #f1f1f1;
     text-transform: uppercase;
 }
 .projects-links .projects-link{
     display: inline-block;
     width: 200px;
-    height: 150px;
+    height: 100px;
     margin: 20px 20px 0px;
-    background-color: #111;
-    border-radius: 25px;
+    background-color: transparent;
+    border: solid teal 2px;
+    border-radius: 7px;
 }
 .projects-links .projects-link p{ 
-    padding-top: 32%;
+    padding-top: 19%;
     font-family: Roboto;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 100;
     color: #f1f1f1;
     text-align: center;
     text-transform: uppercase;
@@ -455,16 +458,18 @@ header .header-brand{
     width: 100%;
     max-width: 500px;
     height: auto;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 40px 50px;
+    /* background: rgba(0, 0, 0, 0.7); */
+    padding: 40px 60px 40px 40px;
     border-radius: 5px;
+    letter-spacing: 10px;
+    border: solid teal 2px;
 }
 .contact-me h2{
     font-family: roboto;
     font-size: 36px;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 100;
     color: #f1f1f1;
     padding-bottom: 15px;
 }
@@ -504,7 +509,7 @@ header .header-brand{
     text-align: center;
     border-radius:5px;
     cursor: pointer;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 .items #message{
     height: 100px;
