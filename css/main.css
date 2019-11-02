@@ -365,10 +365,10 @@ header .header-brand{
     margin:0 auto;
     background: #383737;
 }
-/* .console a{
+.console a{
     color: goldenrod;
 }
-.console a:visited{
+/*.console a:visited{
     color: crimson;
 } */
 @media  only screen and (max-height: 450px){
