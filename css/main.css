@@ -462,8 +462,8 @@ header .header-brand{
 .project-vid article div ul{
     color: #fff;
     list-style-type: disc;
-    list-style-position: inside;
-    font-size: 15px;
+    list-style-position: outside;
+    font-size: 18px;
     text-align: left;
     font-family: Roboto;
 }
