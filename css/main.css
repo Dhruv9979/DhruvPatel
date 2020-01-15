@@ -477,7 +477,8 @@ header .header-brand{
 
 /*Contact Me*/
 .contact-me{
-    margin: 0 25%;
+    /* margin: 0 25%; */
+    margin: 0 auto;
     left: 25%;
     width: 100%;
     max-width: 500px;
