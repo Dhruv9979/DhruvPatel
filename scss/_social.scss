@@ -1,0 +1,75 @@
+.social{
+    position: fixed;
+    top: 30%;
+    z-index: 1;
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+        transform: translateX(-270px);
+        
+        li{
+            display: block;
+            margin: 25px;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: right;
+            padding: 10px;
+            border-radius: 0 30px 30px 0;
+            transition: all 1s;
+
+            &:hover, &.active, &.focus{
+                transform: translateX(110px);
+            }
+
+            &.facebook{
+                &:hover, &.active, &.focus{
+                    background-color: #3D5999;
+                }
+            }
+
+            &.linkedin{
+                &:hover, &.active, &.focus{
+                    background-color: #0077B5;
+                }
+            }
+
+            &.github{
+                &:hover, &.active, &.focus{
+                    background-color: #24292E;
+                }
+            }
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            i{
+                text-align: center;
+                margin-left: 14px;
+                color: black;
+                background-color: white;
+                padding: 10px;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                transform: rotate(0deg);
+
+                &:hover{
+                    transform: rotate(360deg);
+                    transition: all 1s;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 576px){
+    .social ul li {
+        &:hover, &.active, &.focus{
+            transform: translateX(0);
+        }
+    }
+}
