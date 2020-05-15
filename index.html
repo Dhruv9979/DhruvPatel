@@ -1,121 +1,358 @@
 <!doctype html>
 <html class="no-js" lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Dhruv Patel (Software Developer)</title>
-    <meta name="description" content="Dhruv Patel - To pursue a successful career in software development.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="Software Developer,Developer,HTML,CSS,XML,JavaScript,Java,C#,MongoDB,SQL,PHP,Angular 7">
-    <meta name="author" content="Dhruv Patel">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    
-    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-</head>
-<body>
-    <div class="screen-wipe-top"></div>
-    <div class="screen-wipe-bottom"></div>
-    <div id="barba-wrapper">
-        <div class="barba-container">
-            <div class = "bg">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Dhruv Patel (Software Developer)</title>
+        <meta name="description" content="Dhruv Patel - To pursue a successful career in software development.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Software Developer,Developer,HTML,CSS,XML,JavaScript,Java,C#,MongoDB,SQL,PHP,Angular 7">
+        <meta name="author" content="Dhruv Patel">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/normalize.min.css">
+    </head>
+    <body>
+        <div class="screen-wipe-top"></div>
+        <div class="screen-wipe-bottom"></div>
+        <div id="barba-wrapper">
+            <div class="barba-container">
+                <div id="progressbar"></div>
+                <div id="scrollPath"></div>
                 <header>
-                    <a href="index.html" class="header-brand"><img src="img/Logo.png" alt="Logo" width="100", height="70"></a>
-                    <div class="container">
-                        <div id="myNav" class="overlay">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                            <div class="overlay-content">
-                                <ul>
-                                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                                    <li class="nav-item"><a href="about.html" class="nav-link">About Me</a></li>
-                                    <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-                                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Me</a></li>
-                                    <li class="nav-item"><a href="mailto:dhruvp9799@gmail.com?Subject=Job Opportunity" class="nav-link">Hire Me</li></a>
-                                </ul>
-                            </div>
-                        </div>
-                        <span class="hamburger" onclick="openNav()">&#9776;</span>
+                    <section class="logo">
+                        <video src="img/smoke.mp4" autoplay muted loop></video>
+                        <h1>
+                            <span>D</span>
+                            <span>H</span>
+                            <span>R</span>
+                            <span>U</span>
+                            <span>V</span>
+                            <!-- <span> </span>
+                            <span>P</span>
+                            <span>A</span>
+                            <span>T</span>
+                            <span>E</span>
+                            <span>L</span> -->
+                        </h1>
+                    </section>
+                    <nav>
+                        <ul class="items">
+                            <li><a id="home-button" href="#">Home</a></li>
+                            <li><a id="projects-button" href="#">Projects</a></li>
+                            <li><a id="about-button" href="#">About Me</a></li>
+                            <li><a id="contact-button" href="#">Contact Me</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu-toggle">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
                     </div>
                 </header>
-                <main>
-                        <img class="myPic"
-                        sizes="(min-width: 1260px) 257px,
-                                (max-width: 1259px) 150px,
-                                (max-width: 380px) 49px"
-                        srcset="img/Dhruvlarge.jpg 257w,
-                                img/Dhruvmedium.jpg 150w,
-                                img/Dhruvsmall.jpg 49w"
-                        src="img/Dhruvmedium.jpg" alt="Dhruv Patel">
-                    <section class="index-banner">
-                            
-                        <div class="vertical-center">
-                            <h2><b>DHRUV PATEL</b></h2>
-                            <h1>Versatile Software Developer versed in Java, SQL, JavScript programming languages
-                                self-directed learner and able to work in collaborative and supportive team environment. 
-                            </h1>
-                        </div>
-                    </section>
-                    <div class="wrapper">
-                        <section class="index-links">
-                            <a href="projects.html">
-                                <div class="index-boxlink-rectangle">
-                                    <h3>Projects</h3>
-                                </div>
+                <nav class="social">
+                    <ul>
+                        <li class="facebook">
+                            <a target="_blank" href="https://www.facebook.com/druv.patel">Facebook
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
                             </a>
-
-                            <a href="about.html">
-                                <div class="index-boxlink-rectangle">
-                                    <h3>About Me</h3>
-                                </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="linkedin">
+                            <a target="_blank" href="https://www.linkedin.com/in/dhruvpatel9979/">Linkedin
+                                <i class="fab fa-linkedin" aria-hidden="true"></i>
                             </a>
-                            <a href="contact.html">
-                                <div class="index-boxlink-rectangle">
-                                    <h3>Contact</h3>
-                                </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="github">
+                            <a target="_blank" href="https://github.com/Dhruv9979">Github
+                                <i class="fab fa-github" aria-hidden="true"></i>
                             </a>
-                            <a href="mailto:dhruv9799@gmail.com?Subject=Job Opportunity">
-                                <div class="index-boxlink-rectangle">
-                                    <h3>Hire Me</h3>
-                                </div> 
-                            </a>
-                        </section>
-                    </div>
-                </main>
-                <div class="wrapper">
-                    <div class="footer-wrapper">
-                        <footer class="social-footer">
-                            <div class="social-footer-icons">
-                                <ul class="menu simple">
-                                    <li><a target="_blank" href="https://www.facebook.com/druv.patel"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a target="_blank" href="https://www.linkedin.com/in/dhruvpatel9979/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <section id="home-section" class="hero-unit dark-content d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-10 col-md-6">
+                                <h1 class="hero-unit-heading">i'm Dhruv Patel</h1>
+                                <h2 class="hero-unit-subheading">Software Developer</h2>
+                                <p class="black-background">I enjoy building incredible applications. From idea to deployment, I can handle the entire process.</p>
+                                <p>Versatile Software Developer well versed in ASP.NET, Java, SQL, NoSQL, JavaScript and many other programming languages self-directed learner and able to work in collaborative and supportive team environment.</p>
+                                <p>This site showcases my most recent and favorite pieces of work.</p>
+                                <!-- <button id="portfolio-button" class="mt-5 btn btn-primary">Check out my portfolio</button> -->
+                                <a id="portfolio-button" class="neon" href="#">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Check out my portfolio
+                                </a>
                             </div>
-                        </footer>
+                        </div>
+                    </div>
+                </section>
+                <section id="portfolio-section" class="content-section content-section-centered">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2>Projects</h2>
+                                <p>Here's a selection of my pieces of work.</p>
+                            </div>
+                        </div>
+                        <div class="bd-example">
+                            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                                <ol class="carousel-indicators my-4">
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                                </ol>
+                                <div class="carousel-inner" style="border-radius: 4px;">
+                                    <div class="carousel-item active">
+                                        <a href="Visitor_MS.html"><img src="img/VMS.png" class="d-block w-100" alt="Visitor Management System">
+                                            <div class="carousel-caption d-md-block mb-4">
+                                                <h5>Visitor Management System</h5>
+                                                <p>Web App (PHP, MySQl)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="Vidly.html"><img src="img/Vidly.PNG" class="d-block w-100" alt="Vidly (Video Renal App)">
+                                            <div class="carousel-caption d-md-block mb-4">
+                                                <h5>Vidly (Video Renal App)</h5>
+                                                <p>Web App (ASP.NET MVC)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="TalkBox.html"><img src="img/TalkBox.png" class="d-block w-100" alt="TalkBox-Pro">
+                                            <div class="carousel-caption d-md-block mb-4">
+                                                <h5>TalkBox-Pro</h5>
+                                                <p>Desktop App (Java)</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <a href="MediCo.html"><img src="img/Medi.Co.png" class="d-block w-100" alt="TalkBox-Pro">
+                                            <div class="carousel-caption d-md-block mb-4">
+                                                <h5>Medi Co</h5>
+                                                <p>Project Management</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                    <span class="fa fa-chevron-left fa-lg" style="color:red;"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                    <span class="fa fa-chevron-right fa-lg" style="color:red;"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="about-section" class="content-section content-section-side-image dark-content">
+                    <div class="content-section-side-image-container d-block d-sm-none" style="background-image: url('img/who-am-i-mobile.jpg');"></div>
+                    <div class="content-section-side-image-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-9 offset-sm-1">
+                                    <h2 class="content-section-side-image-heading">
+                                        <img class="img-circle mb-2" src="img/Dhruv.jpg" width="60" height="60" alt="Dhruv Patel">
+                                        <br>
+                                        Who am i?
+                                    </h2>
+                                    <p>My name is Dhruv AnandKumar Patel. I was born in India and currently living in Toronto, Canada. 
+                                        I recently graduated with a BA in Information Technology from York University in Toronto 
+                                        and I’m looking for junior Software Developer Job in or around Toronto.</p>
+        
+                                    <p>I’m also an alumnus of Centennial College with a Diploma in Software Engineering.</p>
+        
+                                    <p>I love to solve problems. Whether it’s finding the most elegant way to write a line of code or 
+                                        figuring out which chord fits best into a progression, I love the challenge of finding a way 
+                                        and discovering solutions.</p>
+        
+                                    <p>I love to code during my free time; I have taken this unique opportunity to study new things 
+                                        during the Corona Pandemic I learned a lot of stuff online and also earned a few 
+                                        Certifications.</p>
+                                    <p>To see all my Certifications, <a id="certifications-button" href="#">click here.</a></p>
+        
+                                    <p>I also love to cook and experiment with street food recipes from all over the world. 
+                                        I try to have friends over every other weekend for game night and dinner. 
+                                        I have a dream of opening a little restaurant of my own.</p>
+                                    
+                                    <p>To see my full range of skills, <a data-toggle="modal" href="#skills-modal">click here.</a></p>
+                                    <p>To download my resume, <a data-toggle="modal" href="#skills-modal">click here.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-section-side-image-container d-none d-sm-block" style="background-image: url('img/who-am-i-desktop.jpg');"></div>
+                </section>
+                <section id="certifications-section" class="content-section content-section-centered">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2>My Certifications</h2>
+                            </div>
+                        </div>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/Certificate.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Certificate-DataStructures.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/Certificate.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="fa fa-chevron-left fa-lg" style="color:red;"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="fa fa-chevron-right fa-lg" style="color:red;"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+        
+                <section id="contact-section" class="content-section content-section-centered">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h2>Get in touch</h2>
+                                <p>Say hello or ask me <em>anything</em>. I'm always happy to help.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="offset-sm-3 col-sm-6">
+                                <form class="contact-form" action="https://formspree.io/mwkregay" method="POST">
+                                    <input class="contact-form-input" type="text" name="name" placeholder="Name" value="" required>
+                                    <input class="contact-form-input" type="email" name="email" placeholder="Email Address" value="" required>
+                                    <input class="contact-form-input" type="text" name="phone_number" placeholder="Phone Number" value="" required>
+                                    <textarea class="contact-form-input" name="query" placeholder="Your Query..."></textarea>
+                                    <div class="content-form-actions">
+                                        <input class="contact-form-checkbox-input" type="checkbox" name="consent" id="consent" value="1" required>
+                                        <label for="consent" class="contact-form-checkbox-label">
+                                            I agree to receive a direct response to my enquiry via the contact details provided above.
+                                        </label>
+                                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="footer">
+                    &copy; Dhruv Patel - 2020
+                </footer>
+            </div>
+        </div>
+        <div class="modal fade" id="skills-modal" tabindex="-1" role="dialog" aria-labelledby="skills-modal-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="skills-modal-label">All Skillsets</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mt-1">My current skills, updated as of <strong>May 2020</strong>. Scroll for more.</p>
+                        <div class="skillsets">
+                            <div class="skillset">
+                                <h3 class="skillset-heading">ASP.NET</h3>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Expert</div>
+                                </div>
+                            </div>
+                            <div class="skillset">
+                                <h3 class="skillset-heading">Java</h3>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Expert</div>
+                                </div>
+                            </div>
+                            <div class="skillset">
+                                <h3 class="skillset-heading">PHP</h3>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">Expert</div>
+                                </div>
+                            </div>
+                            <div class="skillset">
+                                <h3 class="skillset-heading">HTML</h3>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                                </div>
+                            </div>
+                            <div class="skillset">
+                                <h3 class="skillset-heading">CSS (SCSS)</h3>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                                </div>
+                            </div>
+                            <div class="skillset">
+                                <h3 class="skillset-heading">JavaScript</h3>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                                </div>
+                            </div>
+                            <div class="skillset">
+                                <h3 class="skillset-heading">SQL</h3>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                                </div>
+                            </div>
+                            <div class="skillset">
+                                <h3 class="skillset-heading">MongoDb</h3>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">Junior</div>
+                                </div>
+                            </div>
+                            <div class="skillset">
+                                <h3 class="skillset-heading">Project Management</h3>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+                                </div>
+                            </div>
+                            <div class="skillset">
+                                <h3 class="skillset-heading">Linux/Unix</h3>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+                                </div>
+                            </div>
+                            <div class="skillset">
+                                <h3 class="skillset-heading">System Administration</h3>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-    <script src="js/vendor/barba.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/vendor/barba.min.js"></script>
+        <script src="js/page-transitions.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
-<!-- <nav class="navbar">
-                            <div class="menu">
-                                <div class="line line-1"></div>
-                                <div class="line line-2"></div>
-                                <div class="line line-3"></div>
-                            </div>
-                            <ul class="nav-list">
-                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                                <li class="nav-item"><a href="about.html" class="nav-link">About Me</a></li>
-                                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-                                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Me</a></li>
-                                <li class="nav-item"><a href="mailto:dhruvp9799@gmail.com?Subject=Job Opportunity" class="nav-link">Hire Me</li></a>
-                            </ul>
-                        </nav> -->
