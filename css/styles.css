@@ -655,10 +655,10 @@ header nav ul li.active ul {
   }
   header .menu-toggle {
     display: block;
-    background: #003636;
+    background: #003636 !important;
   }
   header:before {
-    background: #003636;
+    background: #003636 !important;
   }
   header .video {
     visibility: hidden;
