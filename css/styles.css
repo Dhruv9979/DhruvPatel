@@ -656,7 +656,7 @@ header nav ul li.active ul {
   header .menu-toggle {
     display: block;
   }
-  header .logo .video {
+  header .video {
     display: none;
   }
   header nav {
