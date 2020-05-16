@@ -656,6 +656,10 @@ header nav ul li.active ul {
   header .menu-toggle {
     display: block;
   }
+  header span {
+    opacity: 0;
+    display: inline-block;
+  }
   header .video {
     display: none;
   }

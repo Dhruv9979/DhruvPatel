@@ -229,6 +229,11 @@ header nav ul li.active ul{
             display: block;
         }
 
+        span{
+            opacity: 0;
+            display: inline-block;
+        }
+
         .video{
             display: none;
         }
