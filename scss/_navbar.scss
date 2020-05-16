@@ -122,7 +122,7 @@ header{
                 content: "\f0d7";
                 position: absolute;
                 line-height: 50px;
-                color: #fff !important;
+                color: #fff;
                 right: 5px;
             }
             li.active.sub-menu:before{
@@ -229,18 +229,21 @@ header nav ul li.active ul{
 
         .menu-toggle{
             display: block;
-            background: #003636 !important;
         }
 
-        @supports (mix-blend-mode: normal) {
+        @supports (mix-blend-mode: screen) {
             &:before {
                 background: #003636;
-                mix-blend-mode: normal;
+                mix-blend-mode: screen;
             }
         }
 
         .video{
             visibility: hidden;
+        }
+
+        h1{
+            // position: absolute;
         }
 
         nav{

@@ -569,7 +569,7 @@ header nav ul li.sub-menu:before {
   content: "";
   position: absolute;
   line-height: 50px;
-  color: #fff !important;
+  color: #fff;
   right: 5px;
 }
 header nav ul li.active.sub-menu:before {
@@ -655,12 +655,11 @@ header nav ul li.active ul {
   }
   header .menu-toggle {
     display: block;
-    background: #003636 !important;
   }
-  @supports (mix-blend-mode: normal) {
+  @supports (mix-blend-mode: screen) {
     header:before {
       background: #003636;
-      mix-blend-mode: normal;
+      mix-blend-mode: screen;
     }
   }
   header .video {
