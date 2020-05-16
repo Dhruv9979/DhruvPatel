@@ -669,9 +669,9 @@ header nav ul li.active ul {
     letter-spacing: 2px;
     overflow: hidden;
   }
-  @supports (mix-blend-mode: unset) {
+  @supports (mix-blend-mode: normal) {
     header:before {
-      mix-blend-mode: unset;
+      mix-blend-mode: normal;
     }
   }
   header video {
