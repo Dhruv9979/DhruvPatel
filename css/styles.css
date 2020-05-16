@@ -646,7 +646,6 @@ header .menu-toggle {
   font-size: 24px;
   cursor: pointer;
   display: none;
-  z-index: 10000;
 }
 
 header nav ul li.active ul {
@@ -669,6 +668,11 @@ header nav ul li.active ul {
     font-weight: bolder;
     letter-spacing: 2px;
     overflow: hidden;
+  }
+  @supports (mix-blend-mode: unset) {
+    header:before {
+      mix-blend-mode: unset;
+    }
   }
   header video {
     display: none;
