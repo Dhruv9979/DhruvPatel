@@ -39,6 +39,9 @@ header{
         a{
             text-decoration: none;
         }
+        .mobile-logo{
+            display: none;
+        }
         h1{
         margin: 0;
         padding: 0;
@@ -237,8 +240,24 @@ header nav ul li.active ul{
             display: block;
         }
 
+        .logo{
+            .mobile-logo{
+                display: block;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+                top: 15%;
+                width: 100%;
+                color: #9ACFF6;
+                font-size: 28px;
+                font-weight: bolder;
+                letter-spacing: 2px;
+                overflow: hidden;
+            }
+        }
+
         video{
-            visibility: none;
+            display: none;
         }
 
         nav{
