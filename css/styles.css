@@ -569,7 +569,7 @@ header nav ul li.sub-menu:before {
   content: "";
   position: absolute;
   line-height: 50px;
-  color: #fff !important;
+  color: #fff;
   right: 5px;
 }
 header nav ul li.active.sub-menu:before {
@@ -637,7 +637,7 @@ header nav ul li a:hover:after {
   transition-delay: 0.1s;
 }
 header .menu-toggle {
-  color: #fff !important;
+  color: black !important;
   float: right;
   line-height: 50px;
   font-size: 24px;
