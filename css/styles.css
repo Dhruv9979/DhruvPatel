@@ -655,7 +655,12 @@ header nav ul li.active ul {
   }
   header .menu-toggle {
     display: block;
-    color: #fff !important;
+  }
+  @supports (mix-blend-mode: color) {
+    header:before {
+      background: linear-gradient(to right, #003636, #fff);
+      mix-blend-mode: color;
+    }
   }
   header .video {
     visibility: hidden;

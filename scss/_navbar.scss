@@ -229,7 +229,13 @@ header nav ul li.active ul{
 
         .menu-toggle{
             display: block;
-            color: #fff !important;
+        }
+
+        @supports (mix-blend-mode: color) {
+            &:before {
+                background: linear-gradient(to right, #003636,#fff);
+                mix-blend-mode: color;
+            }
         }
 
         .video{
