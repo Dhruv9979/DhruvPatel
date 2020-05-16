@@ -569,7 +569,7 @@ header nav ul li.sub-menu:before {
   content: "";
   position: absolute;
   line-height: 50px;
-  color: #fff;
+  color: #fff !important;
   right: 5px;
 }
 header nav ul li.active.sub-menu:before {
