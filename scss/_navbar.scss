@@ -24,12 +24,12 @@ header{
             pointer-events: none;
         }
 
-        // @supports (mix-blend-mode: color) {
-        //     &:before {
-        //         background: linear-gradient(to right, #0ff,#0ff);
-        //         mix-blend-mode: color;
-        //     }
-        // }
+        @supports (mix-blend-mode: color) {
+            &:before {
+                background: linear-gradient(to right, #003636,#003636);
+                mix-blend-mode: color;
+            }
+        }
 
         video{
             height: 50px;
