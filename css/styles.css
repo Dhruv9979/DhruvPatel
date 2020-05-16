@@ -656,6 +656,9 @@ header nav ul li.active ul {
   header .menu-toggle {
     display: block;
   }
+  header .logo .video {
+    display: none;
+  }
   header nav {
     position: absolute;
     width: 100%;
@@ -753,11 +756,11 @@ header nav ul li.active ul {
 
 @media only screen and (max-width: 991px) {
   .screen-wipe-top {
-    visibility: hidden;
+    display: none;
   }
 
   .screen-wipe-bottom {
-    visibility: hidden;
+    display: none;
   }
 }
 .google-slides-container {

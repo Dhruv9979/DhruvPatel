@@ -229,6 +229,12 @@ header nav ul li.active ul{
             display: block;
         }
 
+        .logo{
+            .video{
+                display: none;
+            }
+        }
+
         nav{
             position: absolute;
             width: 100%;
