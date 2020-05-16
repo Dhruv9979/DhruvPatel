@@ -655,6 +655,7 @@ header nav ul li.active ul {
   }
   header .menu-toggle {
     display: block;
+    background: #003636;
   }
   header:before {
     background: #003636;
