@@ -659,7 +659,7 @@ header nav ul li.active ul {
   header .menu-toggle {
     display: block;
   }
-  header .mobile-logo {
+  header .logo .mobile-logo {
     display: none;
     margin: 0;
     padding: 0;
