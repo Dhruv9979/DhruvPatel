@@ -637,7 +637,7 @@ header nav ul li a:hover:after {
   transition-delay: 0.1s;
 }
 header .menu-toggle {
-  color: #fff;
+  color: #fff !important;
   float: right;
   line-height: 50px;
   font-size: 24px;
@@ -655,6 +655,7 @@ header nav ul li.active ul {
   }
   header .menu-toggle {
     display: block;
+    color: #fff !important;
   }
   header .video {
     visibility: hidden;

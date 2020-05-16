@@ -210,7 +210,7 @@ header{
     }
 
     .menu-toggle{
-        color: #fff;
+        color: #fff !important;
         float: right;
         line-height: 50px;
         font-size: 24px;
@@ -229,6 +229,7 @@ header nav ul li.active ul{
 
         .menu-toggle{
             display: block;
+            color: #fff !important;
         }
 
         .video{
