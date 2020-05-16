@@ -56,6 +56,9 @@ a:hover, a.active, a.focus {
   min-height: 100vh;
   padding: 50px 0;
 }
+.hero-unit .hero-unit-heading {
+  letter-spacing: 0.5px;
+}
 .hero-unit .hero-unit-subheading {
   color: #9ACFF6;
   text-transform: uppercase;
