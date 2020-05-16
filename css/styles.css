@@ -751,6 +751,15 @@ header nav ul li.active ul {
   bottom: -100%;
 }
 
+@media only screen and (max-width: 991px) {
+  .screen-wipe-top {
+    visibility: hidden;
+  }
+
+  .screen-wipe-bottom {
+    visibility: hidden;
+  }
+}
 .google-slides-container {
   position: relative;
   width: 100%;

@@ -14,3 +14,12 @@
     z-index: 1000;
     bottom: -100%;
 }
+
+@media only screen and (max-width: 991px){
+    .screen-wipe-top{
+        visibility: hidden;
+    }
+    .screen-wipe-bottom{
+        visibility: hidden;
+    }
+}
