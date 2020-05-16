@@ -231,11 +231,9 @@ header nav ul li.active ul{
             display: block;
         }
 
-        @supports (mix-blend-mode: screen) {
-            &:before {
-                background: #003636;
-                mix-blend-mode: screen;
-            }
+        &:before {
+            background: #003636;
+            mix-blend-mode: screen;
         }
 
         .video{

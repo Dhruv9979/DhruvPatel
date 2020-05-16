@@ -656,11 +656,9 @@ header nav ul li.active ul {
   header .menu-toggle {
     display: block;
   }
-  @supports (mix-blend-mode: screen) {
-    header:before {
-      background: #003636;
-      mix-blend-mode: screen;
-    }
+  header:before {
+    background: #003636;
+    mix-blend-mode: screen;
   }
   header .video {
     visibility: hidden;
