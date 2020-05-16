@@ -512,6 +512,9 @@ header .logo video {
 header .logo a {
   text-decoration: none;
 }
+header .logo .mobile-logo {
+  display: none;
+}
 header .logo h1 {
   margin: 0;
   padding: 0;
@@ -656,9 +659,17 @@ header nav ul li.active ul {
   header .menu-toggle {
     display: block;
   }
-  header h1 span {
-    opacity: 0;
-    display: inline-block;
+  header .mobile-logo {
+    display: none;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-187%);
+    width: 100%;
+    color: #9ACFF6;
+    font-size: 28px;
+    font-weight: bolder;
+    letter-spacing: 2px;
   }
   header .video {
     display: none;

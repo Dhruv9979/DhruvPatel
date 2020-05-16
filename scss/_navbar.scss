@@ -39,6 +39,9 @@ header{
         a{
             text-decoration: none;
         }
+        .mobile-logo{
+            display: none;
+        }
         h1{
         margin: 0;
         padding: 0;
@@ -229,9 +232,18 @@ header nav ul li.active ul{
             display: block;
         }
 
-        h1 span{
-            opacity: 0;
-            display: inline-block;
+        .mobile-logo{
+            display: none;
+            margin: 0;
+            padding: 0;
+            // position: absolute;
+            top: 50%;
+            transform: translateY(-187%);
+            width: 100%;
+            color: #9ACFF6;
+            font-size: 28px;
+            font-weight: bolder;
+            letter-spacing: 2px;
         }
 
         .video{
