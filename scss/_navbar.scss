@@ -26,7 +26,7 @@ header{
 
         @supports (mix-blend-mode: color) {
             &:before {
-                background: linear-gradient(to right, #003636,#fff);
+                background: linear-gradient(to right, #003636,#003636);
                 mix-blend-mode: color;
             }
         }
@@ -36,11 +36,9 @@ header{
             width: 150px;
             object-fit: cover;
         }
-
         a{
             text-decoration: none;
         }
-        
         h1{
         margin: 0;
         padding: 0;
@@ -210,7 +208,7 @@ header{
     }
 
     .menu-toggle{
-        color: black !important;
+        color: #fff;
         float: right;
         line-height: 50px;
         font-size: 24px;
@@ -229,17 +227,6 @@ header nav ul li.active ul{
 
         .menu-toggle{
             display: block;
-        }
-
-        @supports (mix-blend-mode: color) {
-            &:before {
-                background: linear-gradient(to right, #003636,#fff);
-                mix-blend-mode: color;
-            }
-        }
-
-        .video{
-            visibility: hidden;
         }
 
         nav{
