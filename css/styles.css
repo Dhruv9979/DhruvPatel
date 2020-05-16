@@ -498,12 +498,6 @@ header .logo:before {
   height: 100%;
   pointer-events: none;
 }
-@supports (mix-blend-mode: color) {
-  header .logo:before {
-    background: linear-gradient(to right, #0ff, #0ff);
-    mix-blend-mode: color;
-  }
-}
 header .logo video {
   height: 50px;
   width: 150px;
