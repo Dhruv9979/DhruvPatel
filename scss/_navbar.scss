@@ -232,24 +232,28 @@ header nav ul li.active ul{
             display: block;
         }
 
-        .logo{
-            .mobile-logo{
-                display: block;
-                margin: 0;
-                padding: 0;
-                // position: absolute;
-                top: 50%;
-                transform: translateY(-187%);
-                width: 100%;
-                color: #9ACFF6;
-                font-size: 28px;
-                font-weight: bolder;
-                letter-spacing: 2px;
-            }
-        }
+        // .logo{
+        //     .mobile-logo{
+        //         display: block !important;
+        //         margin: 0;
+        //         padding: 0;
+        //         // position: absolute;
+        //         top: 50%;
+        //         transform: translateY(-187%);
+        //         width: 100%;
+        //         color: #9ACFF6;
+        //         font-size: 28px;
+        //         font-weight: bolder;
+        //         letter-spacing: 2px;
+        //     }
+
+        //     span{
+        //         display:none;
+        //     }
+        // }
 
         .video{
-            display: none;
+            visibility: hidden;
         }
 
         nav{

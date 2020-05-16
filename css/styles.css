@@ -659,20 +659,8 @@ header nav ul li.active ul {
   header .menu-toggle {
     display: block;
   }
-  header .logo .mobile-logo {
-    display: block;
-    margin: 0;
-    padding: 0;
-    top: 50%;
-    transform: translateY(-187%);
-    width: 100%;
-    color: #9ACFF6;
-    font-size: 28px;
-    font-weight: bolder;
-    letter-spacing: 2px;
-  }
   header .video {
-    display: none;
+    visibility: hidden;
   }
   header nav {
     position: absolute;
