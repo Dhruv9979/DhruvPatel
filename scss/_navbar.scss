@@ -245,12 +245,6 @@ header nav ul li.active ul{
             }
         }
 
-        @supports (mix-blend-mode: normal) {
-            &:before {
-                mix-blend-mode: normal;
-            }
-        }
-
         video{
             display: none;
         }
