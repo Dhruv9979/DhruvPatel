@@ -658,7 +658,7 @@ header nav ul li.active ul {
   }
   header:before {
     background: #003636;
-    mix-blend-mode: screen;
+    mix-blend-mode: unset;
   }
   header .video {
     visibility: hidden;
