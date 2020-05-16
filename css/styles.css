@@ -512,9 +512,6 @@ header .logo video {
 header .logo a {
   text-decoration: none;
 }
-header .logo .mobile-logo {
-  display: none;
-}
 header .logo h1 {
   margin: 0;
   padding: 0;
@@ -656,14 +653,11 @@ header nav ul li.active ul {
   header {
     padding: 0 20px;
   }
-  @supports (mix-blend-mode: color) {
-    header:before {
-      background: linear-gradient(to right, #003636, #003636);
-      mix-blend-mode: color;
-    }
-  }
   header .menu-toggle {
     display: block;
+  }
+  header:before {
+    background: #003636;
   }
   header .video {
     visibility: hidden;

@@ -36,12 +36,11 @@ header{
             width: 150px;
             object-fit: cover;
         }
+
         a{
             text-decoration: none;
         }
-        .mobile-logo{
-            display: none;
-        }
+        
         h1{
         margin: 0;
         padding: 0;
@@ -228,36 +227,13 @@ header nav ul li.active ul{
     header{
         padding: 0 20px;
 
-        @supports (mix-blend-mode: color) {
-            &:before {
-                background: linear-gradient(to right, #003636,#003636);
-                mix-blend-mode: color;
-            }
-        }
-
         .menu-toggle{
             display: block;
         }
 
-        // .logo{
-        //     .mobile-logo{
-        //         display: block !important;
-        //         margin: 0;
-        //         padding: 0;
-        //         // position: absolute;
-        //         top: 50%;
-        //         transform: translateY(-187%);
-        //         width: 100%;
-        //         color: #9ACFF6;
-        //         font-size: 28px;
-        //         font-weight: bolder;
-        //         letter-spacing: 2px;
-        //     }
-
-        //     span{
-        //         display:none;
-        //     }
-        // }
+        &:before{
+            background: #003636;
+        }
 
         .video{
             visibility: hidden;
