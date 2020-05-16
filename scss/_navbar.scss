@@ -229,6 +229,10 @@ header nav ul li.active ul{
             display: block;
         }
 
+        video{
+            visibility: none;
+        }
+
         nav{
             position: absolute;
             width: 100%;

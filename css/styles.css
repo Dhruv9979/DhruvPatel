@@ -656,6 +656,9 @@ header nav ul li.active ul {
   header .menu-toggle {
     display: block;
   }
+  header video {
+    visibility: none;
+  }
   header nav {
     position: absolute;
     width: 100%;
