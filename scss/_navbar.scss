@@ -215,6 +215,13 @@ header{
         cursor: pointer;
         display: none;
         z-index: 10000;
+
+        @supports (mix-blend-mode: color) {
+            &:before {
+                background: linear-gradient(to right, #fff,#fff);
+                mix-blend-mode: color;
+            }
+        }
     }
 }
 
