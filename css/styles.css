@@ -656,7 +656,7 @@ header nav ul li.active ul {
   header .menu-toggle {
     display: block;
   }
-  header span {
+  header h1 span {
     opacity: 0;
     display: inline-block;
   }
