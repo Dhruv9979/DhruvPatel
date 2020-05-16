@@ -657,10 +657,10 @@ header nav ul li.active ul {
     display: block;
     background: #003636 !important;
   }
-  @supports (mix-blend-mode: unset) {
+  @supports (mix-blend-mode: normal) {
     header:before {
-      background: linear-gradient(to right, #003636, #003636);
-      mix-blend-mode: unset;
+      background: #003636;
+      mix-blend-mode: normal;
     }
   }
   header .video {
