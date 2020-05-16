@@ -228,6 +228,13 @@ header nav ul li.active ul{
     header{
         padding: 0 20px;
 
+        @supports (mix-blend-mode: color) {
+            &:before {
+                background: linear-gradient(to right, #003636,#003636);
+                mix-blend-mode: color;
+            }
+        }
+
         .menu-toggle{
             display: block;
         }
