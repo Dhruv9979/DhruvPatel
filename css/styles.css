@@ -438,16 +438,16 @@ a:hover, a.active, a.focus {
   border-radius: 0 30px 30px 0;
   transition: all 1s;
 }
-.social ul li:hover, .social ul li.active, .social ul li.focus {
+.social ul li:hover, .social ul li.focus {
   transform: translateX(110px);
 }
-.social ul li.facebook:hover, .social ul li.facebook.active, .social ul li.facebook.focus {
+.social ul li.facebook:hover, .social ul li.facebook.focus {
   background-color: #3D5999;
 }
-.social ul li.linkedin:hover, .social ul li.linkedin.active, .social ul li.linkedin.focus {
+.social ul li.linkedin:hover, .social ul li.linkedin.focus {
   background-color: #0077B5;
 }
-.social ul li.github:hover, .social ul li.github.active, .social ul li.github.focus {
+.social ul li.github:hover, .social ul li.github.focus {
   background-color: #24292E;
 }
 .social ul li a {
@@ -472,7 +472,7 @@ a:hover, a.active, a.focus {
 }
 
 @media only screen and (max-width: 576px) {
-  .social ul li:hover, .social ul li.active, .social ul li.focus {
+  .social ul li:hover, .social ul li.focus {
     transform: translateX(0);
   }
 }
